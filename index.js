@@ -3,6 +3,11 @@ var teoria = require('teoria')
 module.exports = function(context, descriptor){
   var scale = descriptor.scale || 'major'
   var root = descriptor.root || 'C'
+
+  if (typeof root === 'number' && typeof descriptor.value === 'number'){
+    root += descriptor.value
+  }
+
   var offset = (descriptor.offset || 0) + (context.params.offset || 0)
   return getNote(scale, root, offset)
 }
