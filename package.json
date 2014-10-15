@@ -1,6 +1,6 @@
 {
   "name": "soundbank-scale",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Use with soundbank-inherit to distribute a series of audio-slots across a musical scale.",
   "main": "index.js",
   "dependencies": {
